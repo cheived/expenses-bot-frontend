@@ -4,7 +4,7 @@ import { AppRoot, Input, List, Placeholder, Select, Tappable } from '@telegram-a
 
 function App() {
   return (
-    <List>
+    <>
       <Select header="Category">
         <option>Select category...</option>
         <option>Hello</option>
@@ -12,7 +12,7 @@ function App() {
       </Select>
       <Input placeholder='Type amount...' header='Amount' />
       <Input placeholder='Type comment' header='Comment' />
-    </List>)
+    </>)
 }
 
 
