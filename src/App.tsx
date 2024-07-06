@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import '@telegram-apps/telegram-ui/dist/styles.css';
+
+import { AppRoot, Input, List, Placeholder, Select, Tappable } from '@telegram-apps/telegram-ui';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <List>
+      <Select header="Category">
+        <option>Select category...</option>
+        <option>Hello</option>
+        <option>Okay</option>
+      </Select>
+      <Input placeholder='Type amount...' header='Amount' />
+      <Input placeholder='Type comment' header='Comment' />
+    </List>)
 }
+
 
 export default App;
